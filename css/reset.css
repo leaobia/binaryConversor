@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #DCDCED;
+    --button-color: #6469DC;
+    --font-color: #7A7A7A;
+    --border-color: #1A1E77;
+    --dark-primary-color: #074A71;
+    --color-input: #FFF9F9;
+    --secondary-color-input: #D9D9D9;
+}
+
+a{text-decoration: none; color: inherit;}
+ul,li,ol{list-style: none;}
+
+.font-family-Montserrat{font-family: 'Montserrat', sans-serif;}
+
+.d-grid-center{
+    display: grid;
+    place-self: center;
+}

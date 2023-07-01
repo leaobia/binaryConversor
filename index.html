@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#DCDCED" />
+    <meta name="description"
+        content="Calculadora online de números binários. Realize operações matemáticas com facilidade, adição, subtração, multiplicação e divisão de números binários. Converta entre binário e decimal de forma rápida e precisa. Experimente agora!">
+    <meta name="keywords" content="HTML, CSS, TypeScript, Binários, Decimal, Matemática">
+    <meta name="author" content="Bianca Leao">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Binary Converter</title>
+</head>
+
+<body class="font-family-Montserrat">
+    <main>
+        <div class="welcome__section d-grid-center">
+            <p>Bem-vindo ao site da Calculadora Online Binária! Aqui você encontrará uma poderosa ferramenta para realizar cálculos envolvendo números binários, além de explorar a fascinante história e legado desse sistema numérico.</p>
+        </div>
+        <div class="content d-grid-center">
+            <div class="content__number-converter">
+                <form class="content__number-converter_form">
+    
+                    <select id="tipoDeBaseNumericaInicial" class="padrao">
+                        <option value=""></option>
+                      <option value="binario">de binário</option>
+                      <option value="decimal">de decimal</option>
+                    </select>
+                  
+                    <select id="tipoDeBaseNumericaFinal"  class="padrao">
+                        <option value=""></option>
+                        <option value="binario">para binário</option>
+                        <option value="decimal">para decimal</option>
+                    </select>
+                  
+                    <input type="number" id="numberInput">
+
+                    <button type="button" class="converterButton">converter</button>
+                  
+                    <input type="text" id="readOnlyInput" name="readOnlyInput" class="padrao" readonly>
+                  
+   
+                  </form>
+            </div>
+            <div class="content__text-converter">
+                <form class="content__text-converter_form">
+    
+                  <textarea name="textarea" id="textarea" ></textarea>
+
+                    <button type="button"  class="converterButton">converter</button>
+                  
+                    <input type="text" class="content__text-converter_form_input  padrao" name="readOnlyInput"  readonly id="valorTextoEmBinario">
+                  
+   
+                  </form>
+            </div>
+        </div>
+    </main>
+    <footer>© 2023 Bianca Leão. Todos os direitos reservados.</footer>
+</body>
+
+
+</html>

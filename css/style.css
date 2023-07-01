@@ -1,0 +1,17 @@
+body{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+}
+main{
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+    gap: 10vh;
+}
+footer{
+    text-align: center;
+    font-size: 12px;
+}
+
