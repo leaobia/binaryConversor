@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./css/main.css">
 
     <script src="/ts/numberConverter.js" defer type="module"></script>
+    <script src="/ts/textConverter.js" defer type="module"></script>
 
     <title>Binary Converter</title>
 </head>
@@ -34,15 +35,15 @@
     
                     <select id="tipoDeBaseNumericaInicial" class="padrao">
                         <option value=""></option>
-                      <option value="binario">de binário</option>
-                      <option value="decimal">de decimal</option>
+                      <option value="binario">de binário para decimal</option>
+                      <option value="decimal">de decimal para binario</option>
                     </select>
-                  
+<!--                   
                     <select id="tipoDeBaseNumericaFinal"  class="padrao">
                         <option value=""></option>
                         <option value="binario">para binário</option>
                         <option value="decimal">para decimal</option>
-                    </select>
+                    </select> -->
                   
                     <input type="number" id="numberInput">
 
@@ -55,10 +56,16 @@
             </div>
             <div class="content__text-converter">
                 <form class="content__text-converter_form">
-    
-                  <textarea name="textarea" id="textarea" ></textarea>
 
-                    <button type="button"  class="converterButton">converter</button>
+                    <select id="selecaoCaractere" class="padrao">
+                        <option value=""></option>
+                      <option value="binario">de binário para decimal</option>
+                      <option value="decimal">de decimal para binario</option>
+                    </select>
+    
+                  <textarea name="textarea" id="textareaConverter" ></textarea>
+
+                    <button type="button"  class="converterButton" id="converterTextButton">converter</button>
                   
                     <input type="text" class="content__text-converter_form_input  padrao" name="readOnlyInput"  readonly id="valorTextoEmBinario">
                   

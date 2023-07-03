@@ -1,7 +1,6 @@
 // declaração de váriaveis
 
 const tipoDeBaseNumericaInicial = document.getElementById("tipoDeBaseNumericaInicial") as HTMLSelectElement;
-const tipoDeBaseNumericaFinal = document.getElementById("tipoDeBaseNumericaFinal") as HTMLSelectElement;
 const numberInput = document.getElementById("numberInput") as HTMLSelectElement;
 const converterNumberButton = document.getElementById("converterNumberButton") as HTMLSelectElement;
 const inputShowConverter = document.getElementById("inputShowConverter") as HTMLSelectElement;
@@ -18,12 +17,10 @@ const binaryToDecimal = (binaryNumber: string): number => {
 
 const convertendoValores = () => {
     let valorSelecionadoInicial = tipoDeBaseNumericaInicial.value;
-    let valorSelecionadoFinal = tipoDeBaseNumericaFinal.value;
     let valorDigitado = numberInput.value;
 
     const isBinary = /^[01]+$/;
 
-    if (valorSelecionadoInicial != valorSelecionadoFinal) {
         if (valorSelecionadoInicial === "decimal") {
             const decimalNumber = Number(valorDigitado);
             const binaryNumber = decimalToBinary(decimalNumber);
@@ -34,9 +31,6 @@ const convertendoValores = () => {
         } else {
             alert("O valor digitado não é um número binário válido. Por favor, insira um número binário (0 e 1) válido.");
         }
-    } else {
-        alert('Os valores selecionados para conversão são iguais. Por favor, selecione valores diferentes.')
-    }
 };
 
 

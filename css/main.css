@@ -27,11 +27,11 @@
 .content__text-converter_form{width: 100%;}
 
 .content__text-converter_form textarea{
-    height: 15vh;
+    height: 8vh;
     resize: none;
 }
 
-.content__text-converter_form input{height: 15vh;}
+.content__text-converter_form input{height: 8vh;}
 
 .converterButton{
     background-color: var(--button-color);
@@ -51,10 +51,16 @@
     background-color: #D9D9D9;
     border: none;
 }
-.content__number-converter_form select, .content__number-converter_form input{
+.content__number-converter_form select{
     height: 6.6vh;
 }
+.content__number-converter_form input{
+    height: 8vh;
+}
 
+#selecaoCaractere{
+    height: 6.6vh;
+}
 @media screen and (max-width: 768px) {
     .content{
         grid-template-columns: 1fr;
