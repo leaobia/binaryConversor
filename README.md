@@ -1,1 +1,1 @@
-# binaryConversor
+# Binary Converter
